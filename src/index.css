@@ -1,0 +1,78 @@
+/* HTML Styles */
+body {
+  background-color: #447e9b;
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+
+/* Navigation Styles */
+.nav-tabs .nav-link {
+  border: medium #fff;
+  color: #fff;
+}
+
+.nav-tabs a:hover {
+  color: #000;
+  background-color: #009933;
+}
+
+
+/* Header Styles */
+.Main {
+  text-align: center;
+}
+
+.Main-logo {
+  animation: Main-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Main-title {
+  font-size: 2em;
+  color: gold;
+}
+
+@keyframes Main-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Page and section specific Styles */
+.card-header small {
+  font-style: italic;
+  color: red;
+}
+.card {
+  margin-bottom: 2em;
+}
+
+.card .card-body {
+  cursor: pointer;
+}
+
+.tail {
+  color: red;
+  font-size: small;
+}
+
+.card .card-header {
+  /* background-color: #447e9b; */
+  color: #009933;
+}
+
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
