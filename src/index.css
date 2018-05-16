@@ -50,7 +50,7 @@ h1, h2, p, ul, li {
   margin-bottom: 2em;
 }
 
-.card .card-body {
+.card-header {
   cursor: pointer;
 }
 
