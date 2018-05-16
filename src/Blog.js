@@ -47,7 +47,7 @@ class Blog extends Component {
         const posts = this.state.filteredPosts;
         return (
             <Container>
-                <input className="form-control card" placeholder="Search posts" value={this.state.q} type="text" onChange={this.onChange} />
+                <input className="form-control post-search" placeholder="Search posts" value={this.state.q} type="text" onChange={this.onChange} />
                 {Object.keys(posts).map((key, index) =>
                     <BlogItemCollapse key={index} post={posts[key]} />
                 )}

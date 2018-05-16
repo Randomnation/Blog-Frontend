@@ -12,16 +12,24 @@ class Main extends Component {
     render() {
         return (
             <HashRouter>
-                <div>
-                    <header className="Main">
-                        <img src={logo} className="Main-logo" alt="logo" />
-                        <h1 className="Main-title">REST Blog</h1>
+                <div className="container">
+                    <header className="blog-header py-3">
+                        <div className="row flex-nowrap justify-content-between align-items-center">              
+                            <div className="col-4 pt-1">
+                                <img src={logo} className="Main-logo" alt="logo" />
+                            </div>
+                            <div className="col-4 text-center">
+                                <NavLink className="blog-header-logo text-dark" exact to="/">REST Blog</NavLink>
+                            </div>
+                        </div>
                     </header>
+                    <div class="nav-scroller py-1 mb-2">
+                        <nav class="nav d-flex justify-content-center">
+                            <NavLink className="nav-link" exact to="/">Home</NavLink>
+                            <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                        </nav>
+                    </div>
                     <div className="container">
-                        <ul className="nav nav-tabs custom">
-                            <li className="nav-item"><NavLink className="nav-link" exact to="/">Home</NavLink></li>
-                            <li className="nav-item"><NavLink className="nav-link" to="/blog">Blog</NavLink></li>
-                        </ul>
                         <div className="content">
                             <Route exact path ="/" component={Home} />
                             <Route path ="/blog" component={Blog} />

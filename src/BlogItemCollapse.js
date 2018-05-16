@@ -19,9 +19,9 @@ class BlogItemCollapse extends Component {
         return (
             <ListGroupItem>
                 <div className="card">
-                    <div className="card-header" onClick={this.toggle}>
+                    <div className="card-header post-header" onClick={this.toggle}>
                         <h5 className="card-title">{post.title}</h5>
-                        <small>
+                        <small className="post-date">
                             <Moment parse="YYYY-MM-DD HH:mm">
                                 {post.created_date}
                             </Moment>
